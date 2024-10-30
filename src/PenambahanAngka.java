@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -24,22 +27,203 @@ public class PenambahanAngka extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
+
+        jLabel5 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        txtAngka1 = new javax.swing.JTextField();
+        txtAngka2 = new javax.swing.JTextField();
+        txtAngka3 = new javax.swing.JTextField();
+
+        jLabel5.setText("jLabel5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jPanel1.setAlignmentX(2.0F);
+        jPanel1.setAlignmentY(2.0F);
+        jPanel1.setLayout(new java.awt.GridBagLayout());
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setText("Pertambahan 2 Angka");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.insets = new java.awt.Insets(12, 13, 12, 13);
+        jPanel1.add(jLabel1, gridBagConstraints);
+
+        jLabel2.setText("Angka Pertama");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.insets = new java.awt.Insets(12, 22, 12, 22);
+        jPanel1.add(jLabel2, gridBagConstraints);
+
+        jLabel3.setText("Angka Kedua");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.insets = new java.awt.Insets(12, 27, 12, 27);
+        jPanel1.add(jLabel3, gridBagConstraints);
+
+        jButton1.setText("Tambah");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.insets = new java.awt.Insets(12, 20, 12, 20);
+        jPanel1.add(jButton1, gridBagConstraints);
+
+        jButton2.setText("Hapus");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ActionListener(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.insets = new java.awt.Insets(12, 13, 12, 13);
+        jPanel1.add(jButton2, gridBagConstraints);
+
+        jButton3.setText("Keluar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.insets = new java.awt.Insets(12, 13, 12, 13);
+        jPanel1.add(jButton3, gridBagConstraints);
+
+        jLabel4.setText("Hasil");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.insets = new java.awt.Insets(10, 47, 10, 47);
+        jPanel1.add(jLabel4, gridBagConstraints);
+
+        txtAngka1.setColumns(10);
+        txtAngka1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtAngka1FocusGained(evt);
+            }
+        });
+        txtAngka1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAngka1ActionPerformed(evt);
+            }
+        });
+        txtAngka1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtAngka1KeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.insets = new java.awt.Insets(0, 39, 0, 39);
+        jPanel1.add(txtAngka1, gridBagConstraints);
+
+        txtAngka2.setColumns(10);
+        txtAngka2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtAngka2FocusGained(evt);
+            }
+        });
+        txtAngka2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAngka2ActionPerformed(evt);
+            }
+        });
+        txtAngka2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtAngka2KeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.insets = new java.awt.Insets(0, 39, 0, 39);
+        jPanel1.add(txtAngka2, gridBagConstraints);
+
+        txtAngka3.setEditable(false);
+        txtAngka3.setColumns(10);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 38, 0, 38);
+        jPanel1.add(txtAngka3, gridBagConstraints);
+
+        getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    try {
+    int wi = Integer.parseInt(txtAngka2.getText());
+    int joko = Integer.parseInt(txtAngka2.getText());
+    int hasil = joko + wi ;
+    txtAngka3.setText(Integer.toString(hasil));
+    } catch (NumberFormatException e) {
+        JOptionPane.showMessageDialog(this, "Input harus berupa Angka", "Eror",
+            JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtAngka1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAngka1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAngka1ActionPerformed
+
+    private void ActionListener(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ActionListener
+        txtAngka1.setText("");
+        txtAngka2.setText("");
+        txtAngka3.setText("");
+        txtAngka1.requestFocus();
+    }//GEN-LAST:event_ActionListener
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void txtAngka1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAngka1KeyTyped
+    char c = evt.getKeyChar();
+    if (!Character.isDigit(c)) {
+        evt.consume();
+    }
+    }//GEN-LAST:event_txtAngka1KeyTyped
+
+    private void txtAngka2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAngka2KeyTyped
+    char c = evt.getKeyChar();
+    if (!Character.isDigit(c)) {
+        evt.consume();
+    }
+    }//GEN-LAST:event_txtAngka2KeyTyped
+
+    private void txtAngka1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtAngka1FocusGained
+    txtAngka1.setText("");        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAngka1FocusGained
+
+    private void txtAngka2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAngka2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAngka2ActionPerformed
+
+    private void txtAngka2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtAngka2FocusGained
+    txtAngka2.setText("");        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAngka2FocusGained
 
     /**
      * @param args the command line arguments
@@ -77,5 +261,17 @@ public class PenambahanAngka extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField txtAngka1;
+    private javax.swing.JTextField txtAngka2;
+    private javax.swing.JTextField txtAngka3;
     // End of variables declaration//GEN-END:variables
 }
